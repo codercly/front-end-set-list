@@ -47,7 +47,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Canta Saporra Direito MORTÂO!!!</h1>
+      <h1>Set List</h1>
       <input className='inp'
         type="text"
         placeholder="Enter Spotify Playlist Link"
@@ -57,7 +57,7 @@ function App() {
       <button className='btn' onClick={handleGetLyrics}>Get Lyrics</button>
 
       {isLoading ? (
-        <p style={{color:'#e75d00'}}>Calma ae microfone! Estou pegando as letras</p>
+        <p style={{color:'#e75d00'}}>Calma ae microfono! Estou pegando as letras</p>
       ) : (
         <div>
           {error && <p style={{ color: 'red' }}>{error}</p>}
